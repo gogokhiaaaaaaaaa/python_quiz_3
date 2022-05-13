@@ -22,4 +22,6 @@ print("your information in database")
 read_data = cursor.execute("select * from tv_series").fetchall()
 for each in read_data:
     print(each)
+    
+connection.close()
 
